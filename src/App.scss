@@ -1,0 +1,109 @@
+body{
+  margin: 0;
+  background: linear-gradient(133deg, rgba(34,97,195,1) 0%, rgba(45,253,135,1) 100%);
+  height: 100vh;
+}
+.imgderecha{
+  transform:  rotateY(180deg);
+  
+}
+.rojo{
+  height: 100vh;
+  width: 50%;
+  
+  display: flex;
+}
+.verde{
+  height: 100vh;
+  width: 50%;
+  
+  display: flex;
+  justify-content: end;
+}
+.contenedor{
+  display: flex;
+}
+.centro{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parrafo{
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: large;
+  color: rgb(30, 32, 32);
+  border-radius: 20px;
+  padding: 1px 20px 1px 20px;
+  transition: all 300ms;
+  user-select: none;
+}
+.img {
+  transition: all 200ms;
+  visibility: visible;
+  opacity: 30%;
+  user-select: none;
+}
+.efectoescritura {
+  color: #1e2020;
+  font-family: monospace;
+  font-size: large;
+  text-transform: uppercase;
+  user-select: none;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 22ch;
+}
+.efectoescritura{
+  animation: typing 3s steps(22), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+.efectoescrituraabajo{
+  color: #1e2020;
+  font-family: monospace;
+  font-size: large;
+  text-transform: uppercase;
+  user-select: none;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 30ch;
+  margin-bottom: 117px;
+  visibility: hidden;
+
+  animation: typing 3s steps(30),blink .5s infinite step-end alternate ,aparecer 0.1s infinite;
+  overflow: hidden;
+  animation-delay: 3.5s;
+}
+@keyframes typing{
+  from { width: 0; }
+}
+@keyframes blink{
+  50%{ border-color: transparent; }
+}
+@keyframes aparecer {
+  from { visibility: visible; }
+}
+@keyframes desaparecer {
+  from {  border-right: none;}
+}
+
+.parrafo:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: rgb(18, 16, 126);
+}
+
+@media (max-width: 800px) {
+  .img {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
