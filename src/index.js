@@ -1,13 +1,23 @@
 import React from 'react';
+import { 
+  BrowserRouter,
+  Routes,
+  Route, 
+} from "react-router-dom";
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App.tsx';
-import reportWebVitals from './reportWebVitals';
+import App from './App.jsx'
+import reportWebVitals from './reportWebVitals'
+import Notfound from './routes/paginanoencontrada'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="*" element={<Notfound />} />
+    </Routes>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 
