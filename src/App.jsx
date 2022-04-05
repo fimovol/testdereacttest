@@ -11,7 +11,7 @@ function App(){
   return (
     <div className="App">
       <div className="centro">
-        <span className='efectoescritura' style={estado}>Programador full-stack</span>
+        <span className='efectoescritura' style={estado}>Programador Front-end</span>
         <span className='efectoescrituraabajo'>en búsqueda de su primer empleo</span>
         <Link to="sobremi" className='parrafo'>sobre mi</Link>
         <Link to="contacto" className='parrafo'>contacto</Link>

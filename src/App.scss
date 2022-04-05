@@ -63,10 +63,9 @@ body{
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 22ch;
-}
-.efectoescritura{
-  animation: typing 3s steps(22), blink .5s infinite step-end alternate;
+  width: 21ch;
+  
+  animation: typing 3s steps(21), blink .5s infinite step-end alternate;
   overflow: hidden;
 }
 .efectoescrituraabajo{
