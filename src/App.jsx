@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.scss';
-import imagen from './img/a2.png';
+import imagen from './img/a2-min.png';
 import { Link } from "react-router-dom";
 
 function App(){
