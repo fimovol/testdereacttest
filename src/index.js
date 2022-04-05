@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   Routes,
   Route,
-  HashRouter, 
+  BrowserRouter, 
 } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -15,7 +15,7 @@ import Proyectos from './routes/mejoresproyectos'
 import Sobremi from './routes/sobremi'
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/sobremi" element={<Sobremi />} />
@@ -24,7 +24,7 @@ ReactDOM.render(
       <Route path='/blog' element={<Blog/>}/>
       <Route path="*" element={<Notfound />} />
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
   ,
   document.getElementById('root')
 );
