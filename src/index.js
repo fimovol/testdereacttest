@@ -1,8 +1,8 @@
 import React from 'react';
 import { 
-  BrowserRouter,
   Routes,
-  Route, 
+  Route,
+  HashRouter, 
 } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -11,12 +11,13 @@ import reportWebVitals from './reportWebVitals'
 import Notfound from './routes/paginanoencontrada'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path='/hola' element={<h1>hola pagina de ejemplo</h1>}/>
       <Route path="*" element={<Notfound />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   ,
   document.getElementById('root')
 );

@@ -17,6 +17,7 @@ function App(){
         <p className='parrafo'>contacto</p>
         <p className='parrafo'>mejores proyectos</p>
         <p className='parrafo'>esto es nada q</p>
+        <Link to="hola">ejemplo</Link>
     </div>
     <div className="contenedor">
         <div className="rojo">
