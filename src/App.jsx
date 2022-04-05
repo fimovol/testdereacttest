@@ -13,11 +13,10 @@ function App(){
       <div className="centro">
         <span className='efectoescritura' style={estado}>Programador full-stack</span>
         <span className='efectoescrituraabajo'>en búsqueda de su primer empleo</span>
-        <p className='parrafo'>sobre mi</p>
-        <p className='parrafo'>contacto</p>
-        <p className='parrafo'>mejores proyectos</p>
-        <p className='parrafo'>esto es nada q</p>
-        <Link to="hola">ejemplo</Link>
+        <Link to="sobremi" className='parrafo'>sobre mi</Link>
+        <Link to="contacto" className='parrafo'>contacto</Link>
+        <Link to="proyectos" className='parrafo'>mejores proyectos</Link>
+        <Link to="blog" className='parrafo'>Blog y publicaciones</Link>
     </div>
     <div className="contenedor">
         <div className="rojo">

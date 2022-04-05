@@ -9,12 +9,19 @@ import './index.css';
 import App from './App.jsx'
 import reportWebVitals from './reportWebVitals'
 import Notfound from './routes/paginanoencontrada'
+import Blog from './routes/blog'
+import Contacto from './routes/contacto'
+import Proyectos from './routes/mejoresproyectos'
+import Sobremi from './routes/sobremi'
 
 ReactDOM.render(
   <HashRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path='/hola' element={<h1>hola pagina de ejemplo</h1>}/>
+      <Route path="/sobremi" element={<Sobremi />} />
+      <Route path="/contacto" element={<Contacto />} />
+      <Route path="/proyectos" element={<Proyectos />} />
+      <Route path='/blog' element={<Blog/>}/>
       <Route path="*" element={<Notfound />} />
     </Routes>
   </HashRouter>
