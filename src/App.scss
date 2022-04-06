@@ -48,6 +48,7 @@ body{
   user-select: none;
   margin-block-start: 1em;
   margin-block-end: 1em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .img {
   opacity: 30%;
@@ -99,8 +100,7 @@ body{
 }
 
 .parrafo:hover {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  color: rgb(18, 16, 126);
+  color: rgb(2, 0, 138);
 }
 
 @media (max-width: 912px) {
