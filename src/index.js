@@ -3,9 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx'
 import reportWebVitals from './reportWebVitals'
+import Notfound from './routes/paginanoencontrada'
+import { 
+  Routes,
+  Route,
+  BrowserRouter, 
+} from "react-router-dom";
 
 ReactDOM.render(
-  <App />
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <App />} />
+      <Route path="*" element={ <Notfound />} />
+    </Routes>
+  </BrowserRouter>
+ 
   ,
   document.getElementById('root')
 );

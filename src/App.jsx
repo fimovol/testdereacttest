@@ -1,61 +1,45 @@
 import { useState } from 'react';
 import './App.scss';
 import imagen from './img/a2-min.png';
-import { Link } from "react-router-dom";
-import { 
-  Routes,
-  Route,
-  BrowserRouter, 
-} from "react-router-dom";
 import Sobremi from './routes/sobremi'
-import Notfound from './routes/paginanoencontrada'
 import Blog from './routes/blog'
 import Contacto from './routes/contacto'
 import Proyectos from './routes/mejoresproyectos'
 
 function Fotossenalando (){
-  return (
-      <div className="contenedor">
-        <div className="rojo">
-            <img src={imagen} alt="" className="img"/>
-        </div>
-        <div className="verde">
-            <img src={imagen} alt="" className="img imgderecha"/>
-        </div>
-      </div>
-  )
-}
-function Contenidocentral(){
   setTimeout( function() {
     setestado({borderRight: "none"})
   },3000)
   const [estado,setestado] = useState({})
-  return(
-    <div className="centro">
-      <span className='efectoescritura' style={estado}>Programador Front-end</span>
-      <span className='efectoescrituraabajo'>en búsqueda de su primer empleo</span>
-      <Link to="sobremi" className='parrafo'>sobre mi</Link>
-      <Link to="contacto" className='parrafo'>contacto</Link>
-      <Link to="proyectos" className='parrafo'>mejores proyectos</Link>
-      <Link to="blog" className='parrafo'>Blog y publicaciones</Link>
-    </div>
- )
+  return (
+      <section id='home' className="contenedor">
+        <div className="rojo">
+            <img src={imagen} alt="" className="img"/>
+            <img src={imagen} alt="" className="img imgderecha"/>
+        </div>
+        <div className="centro">
+          <span className='efectoescritura' style={estado}>Programador Front-end</span>
+          <span className='efectoescrituraabajo'>en búsqueda de su primer empleo</span>
+        </div>
+      </section>
+  )
 }
 
 function App(){
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Contenidocentral/>} />
-          <Route path="/sobremi" element={<Sobremi/>} />
-          <Route path="/contacto" element={<Contacto/>} />
-          <Route path="/proyectos" element={<Proyectos/>} />
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="*" element={<Notfound/>} />
-        </Routes>
-      </BrowserRouter>
+      <nav>
+        <a href="#home" className='parrafo'>home</a>
+        <a href="#sobremi" className='parrafo'>sobre mi</a>
+        <a href="#contacto" className='parrafo'>contacto</a>
+        <a href="#proyectos" className='parrafo'>mejores proyectos</a>
+        <a href="#Blog" className='parrafo'>Blog y publicaciones</a>
+      </nav>
       <Fotossenalando/>
+      <section id='sobremi'><Sobremi/></section>
+      <section id='contacto'><Contacto/></section>
+      <section id='proyectos'><Proyectos/></section>
+      <section id='Blog'><Blog/></section>
     </div>
   );
 }
