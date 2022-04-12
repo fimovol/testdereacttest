@@ -26,14 +26,33 @@ function Fotossenalando (){
 }
 
 function App(){
+  const [elemento,setelemento]=useState(true)
+  let estilos = null
+  let navbarestilo = null
+  if(elemento === true){
+
+  }
+  if(elemento === false){
+    estilos = {
+      display: 'block',
+    }
+    navbarestilo = {
+      height: 'auto',
+      justifyContent: 'center',
+      flexDirection: 'column'
+    }
+  }
   return (
     <div className="App">
-      <nav>
-        <a href="#home" className='parrafo'>home</a>
-        <a href="#sobremi" className='parrafo'>sobre mi</a>
-        <a href="#contacto" className='parrafo'>contacto</a>
-        <a href="#proyectos" className='parrafo'>mejores proyectos</a>
-        <a href="#Blog" className='parrafo'>Blog y publicaciones</a>
+      <nav className='navbar' style={navbarestilo}>
+        <div className='tres lineas'>
+          <i className="fa fa-bars fa-3" aria-hidden="true" onClick={() => setelemento(!elemento)}></i>
+        </div>
+        <a href="#home" className='parrafo' style={estilos} onClick={() => setelemento(true)}>home</a>
+        <a href="#sobremi" className='parrafo' style={estilos} onClick={() => setelemento(true)}>sobre mi</a>
+        <a href="#contacto" className='parrafo' style={estilos} onClick={() => setelemento(true)}>contacto</a>
+        <a href="#proyectos" className='parrafo' style={estilos} onClick={() => setelemento(true)}>mejores proyectos</a>
+        <a href="#Blog" className='parrafo' style={estilos} onClick={() => setelemento(true)}>Blog y publicaciones</a>
       </nav>
       <Fotossenalando/>
       <section id='sobremi'><Sobremi/></section>
