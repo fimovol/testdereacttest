@@ -1,0 +1,23 @@
+.h1{
+    margin: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.caja{
+    width: 270px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: red;
+    margin-bottom: 48px;
+    transition: .1s linear;
+}
+.caja:hover{
+    transform: translatey(-20px);
+}
+.blogcontainer{
+    margin-top: 60px;
+    width: 73vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

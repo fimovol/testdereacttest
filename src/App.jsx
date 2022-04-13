@@ -2,9 +2,9 @@ import { useState } from 'react';
 import './App.scss';
 import imagen from './img/a2-min.png';
 import Sobremi from './routes/sobremi'
-import Blog from './routes/blog'
 import Contacto from './routes/contacto'
 import Proyectos from './routes/mejoresproyectos'
+import { Link } from 'react-router-dom';
 
 function Fotossenalando (){
   setTimeout( function() {
@@ -12,7 +12,7 @@ function Fotossenalando (){
   },3000)
   const [estado,setestado] = useState({})
   return (
-      <section id='home' className="contenedor">
+      <section className='section' id='home'>
         <div className="rojo">
             <img src={imagen} alt="" className="img"/>
             <img src={imagen} alt="" className="img imgderecha"/>
@@ -55,10 +55,13 @@ function App(){
         <a href="#Blog" className='parrafo' style={estilos} onClick={() => setelemento(true)}>Blog y publicaciones</a>
       </nav>
       <Fotossenalando/>
-      <section id='sobremi'><Sobremi/></section>
-      <section id='contacto'><Contacto/></section>
-      <section id='proyectos'><Proyectos/></section>
-      <section id='Blog'><Blog/></section>
+      <section className='section' id='sobremi'><Sobremi/></section>
+      <section className='section' id='contacto'><Contacto/></section>
+      <section className='section' id='proyectos'><Proyectos/></section>
+      <section className='section' id='Blog'>
+        <Link className='link blog' to="/b">vamos a mi blog</Link>
+      </section>
+      
     </div>
   );
 }

@@ -9,11 +9,14 @@ import {
   Route,
   BrowserRouter, 
 } from "react-router-dom";
+import Blog from "./routes/blog"
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={ <App />} />
+      <Route path="/b" element={ <Blog />} >
+      </Route>
       <Route path="*" element={ <Notfound />} />
     </Routes>
   </BrowserRouter>
