@@ -103,7 +103,7 @@ body{
   justify-content: center;
 }
 .link.blog{
-  z-index: 10;
+  z-index: 5;
   background-color: rgb(2, 0, 138);
   color: rgb(196, 196, 196);
   border-radius: 20px;
@@ -133,7 +133,7 @@ body{
 .parrafo:hover {
   color: rgb(2, 0, 138);
 }
-@media (max-width: 730px){
+@media (max-width: 892px){
   .navbar{
     justify-content: flex-end;
     text-align: center;
