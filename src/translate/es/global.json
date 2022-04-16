@@ -2,8 +2,28 @@
     "header":{
         "home": "casa",
         "about": "sobre mi",
-        "contact": "contacto",
+        "contact": "contactame",
         "proyects": "mejores proyectos",
         "blog": "blog y publicaciones"
+    },
+    "about":{
+        "line-1":"Me dedico a mejorar visualmente las paginas",
+        "line-2":"web en el sector de informática nos llaman",
+        "line-3":"Desarrolladores de Frontend, comencé a programar",
+        "line-4":"en 2018 en mi instituto, terminé proyectos,",
+        "line-5":"mejore como programador y ahora estoy ",
+        "line-6":"en búsqueda de nuevos desafíos"
+    },
+    "contact":{
+        "mail":"correo"
+    },
+    "blog":{
+        "text":"vamos a mi blog",
+        "title": "ten algunos articulos recomendados",
+        "description":"en español"
+    },
+    "effectwrite":{
+        "_1":"Programador Front-end",
+        "_2":"en búsqueda de su primer empleo"
     }
 }

@@ -5,5 +5,25 @@
         "contact": "contact",
         "proyects": "best proyects",
         "blog": "blog and publications"
+    },
+    "about":{
+        "line-1":"I dedicate myself to visually improve the pages",
+        "line-2":"web in the computer sector call us",
+        "line-3":"Frontend developers, I started programming",
+        "line-4":"in 2018 in my institute, I finished projects,",
+        "line-5":"I improved as a programmer and now I'm",
+        "line-6":"in search of new challenges"
+    },
+    "contact":{
+        "mail":"mail"
+    },
+    "blog":{
+        "text":"let's go to my blog",
+        "title": "have some recommended articles",
+        "description":"en ingles"
+    },
+    "effectwrite":{
+        "_1":"Front end programmer",
+        "_2":"looking for your first job"
     }
 }

@@ -9,7 +9,7 @@ import {
   Route,
   BrowserRouter, 
 } from "react-router-dom";
-import Blog from "./routes/blog"
+import {Blog} from "./routes/blog"
 import { I18nextProvider } from "react-i18next"
 import i18next from "i18next"
 import global_es from "./translate/es/global.json"
@@ -17,7 +17,7 @@ import global_en from "./translate/en/global.json"
 
 i18next.init({
   interpolation:{ escapeValue: false},
-  lng:"es",
+  lng:"en",
   resources: {
     es:{
       global:global_es
