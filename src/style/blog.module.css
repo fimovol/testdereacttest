@@ -7,7 +7,7 @@
     width: 270px;
     height: 380px;
     border-radius: 10px;
-    background-color: red;
+    background-color: rgb(125, 125, 241);
     margin-bottom: 48px;
     transition: .1s linear;
 }
@@ -45,6 +45,9 @@
 .centrado{
     width: 90%;
     height: 90%;
+}
+.descripcion{
+    color: black;
 }
 @media (max-width:738px){
     .blogcontainer{
