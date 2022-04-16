@@ -1,0 +1,9 @@
+{
+    "header":{
+        "home": "casa",
+        "about": "sobre mi",
+        "contact": "contacto",
+        "proyects": "mejores proyectos",
+        "blog": "blog y publicaciones"
+    }
+}

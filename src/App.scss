@@ -138,7 +138,7 @@ body{
     justify-content: flex-end;
     text-align: center;
   }
-  .navbar > .parrafo:nth-child(1n+2) {
+  .navbar > .parrafo:nth-child(1n+2),.navbar > button {
     display: none;
   }
   .tres.lineas{

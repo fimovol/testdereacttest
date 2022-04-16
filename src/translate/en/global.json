@@ -1,0 +1,9 @@
+{
+    "header":{
+        "home": "home",
+        "about": "about",
+        "contact": "contact",
+        "proyects": "best proyects",
+        "blog": "blog and publications"
+    }
+}

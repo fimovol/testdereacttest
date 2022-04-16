@@ -5,6 +5,7 @@ import Sobremi from './routes/sobremi'
 import Contacto from './routes/contacto'
 import Proyectos from './routes/mejoresproyectos'
 import { Link } from 'react-router-dom';
+import {useTranslation} from "react-i18next"
 
 function Fotossenalando (){
   setTimeout( function() {
@@ -26,6 +27,8 @@ function Fotossenalando (){
 }
 
 function App(){
+  const [t,i18n] =useTranslation("global")
+
   const [elemento,setelemento]=useState(true)
   let estilos = null
   let navbarestilo = null
@@ -48,11 +51,13 @@ function App(){
         <div className='tres lineas'>
           <i className="fa fa-bars fa-3" aria-hidden="true" onClick={() => setelemento(!elemento)}></i>
         </div>
-        <a href="#home" className='parrafo' style={estilos} onClick={() => setelemento(true)}>home</a>
-        <a href="#sobremi" className='parrafo' style={estilos} onClick={() => setelemento(true)}>sobre mi</a>
-        <a href="#contacto" className='parrafo' style={estilos} onClick={() => setelemento(true)}>contacto</a>
-        <a href="#proyectos" className='parrafo' style={estilos} onClick={() => setelemento(true)}>mejores proyectos</a>
-        <a href="#Blog" className='parrafo' style={estilos} onClick={() => setelemento(true)}>Blog y publicaciones</a>
+        <a href="#home" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.home")}</a>
+        <a href="#sobremi" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.about")}</a>
+        <a href="#contacto" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.contact")}</a>
+        <a href="#proyectos" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.proyects")}</a>
+        <a href="#Blog" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.blog")}</a>
+        <button style={estilos} onClick={() => i18n.changeLanguage("es")}>Español</button>
+        <button style={estilos} onClick={() => i18n.changeLanguage("en")}>English</button>
       </nav>
       <Fotossenalando/>
       <section className='section' id='sobremi'><Sobremi/></section>
