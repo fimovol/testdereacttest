@@ -2,12 +2,13 @@
     margin: 15px 20px;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
 }
 .caja{
     width: 270px;
-    height: 380px;
+    height: 405px;
     border-radius: 10px;
-    background-color: rgb(125, 125, 241);
+    background-color: rgb(15, 20, 49);
     margin-bottom: 48px;
     transition: .1s linear;
 }
@@ -31,23 +32,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid;
 }
 .abajo{
     width: 100%;
     height: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .imagen{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 .centrado{
-    width: 90%;
-    height: 90%;
+    width: 250px;
+    height: 170px;
 }
 .descripcion{
-    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(196, 196, 196);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+}
+.href{
+    text-decoration: none;
+}
+.texto{
+    color: rgb(196, 196, 196);;
+    margin: 0 15px 0 15px;
+    text-align: center;
+    letter-spacing: .6px;
 }
 @media (max-width:738px){
     .blogcontainer{
