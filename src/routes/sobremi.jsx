@@ -6,7 +6,7 @@ export const Sobremi = () =>{
     return (
         <>
             <div className={styles.contenido}>
-                <p></p>
+                <h2>{t("header.about")}</h2>
                 <p className={styles.p}>{t("about.line-1")}</p>
                 <p className={styles.p}>{t("about.line-2")} </p>
                 <p className={styles.p}>{t("about.line-3")}</p>

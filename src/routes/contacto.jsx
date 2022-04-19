@@ -9,6 +9,7 @@ export function Contacto(){
     }
     return (
         <div className={styles.contenedorcontacto}>
+            <h2>{t("header.contact")}</h2>
             <p className={styles.psincapitalize} style={estilos}>{t("contact.mail")}:</p>
             <p className={styles.psincapitalize}><a href="mailto:javiersanchezch@outlook.es">javiersanchezch@outlook.es</a> </p>
             <p className={styles.psincapitalize}>GITHUB : </p>
