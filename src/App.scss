@@ -41,8 +41,6 @@ body{
   padding: 1px 20px 1px 20px;
   transition: all 300ms;
   user-select: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
 }
 .img {
   opacity: 30%;
@@ -140,6 +138,9 @@ body{
   }
   .navbar > .parrafo:nth-child(1n+2),.navbar > button {
     display: none;
+  }
+  .parrafo{
+    margin-block-end: 1em;
   }
   .tres.lineas{
     width: 90px;

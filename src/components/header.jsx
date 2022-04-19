@@ -3,27 +3,31 @@ import { useState } from 'react';
 
 export default function _(){
     const [t,i18n] =useTranslation("global")
-
+    let icono
     const [elemento,setelemento]=useState(true)
-    let estilos = null
+    let estilos = {
+      cursor: "pointer"
+    }
     let navbarestilo = null
     if(elemento === true){
-
+      icono = "fa fa-bars fa-3"
     }
     if(elemento === false){
-    estilos = {
-      display: 'block',
-    }
-    navbarestilo = {
-      height: 'auto',
-      justifyContent: 'center',
-      flexDirection: 'column'
-    }
+      icono = "fa fa-times"
+      estilos = {
+        display: 'block',
+        cursor: "pointer"
+      }
+      navbarestilo = {
+        height: 'auto',
+        justifyContent: 'center',
+        flexDirection: 'column'
+      }
   }
     return (
     <nav className='navbar' style={navbarestilo}>
       <div className='tres lineas'>
-        <i className="fa fa-bars fa-3" aria-hidden="true" onClick={() => setelemento(!elemento)}></i>
+        <i className={icono} style={{cursor:"pointer"}} onClick={() => setelemento(!elemento)}></i>
       </div>
       <a href="#home" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.home")}</a>
       <a href="#sobremi" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.about")}</a>
