@@ -23,14 +23,16 @@ export const FotosBackground = () => {
       },3000)
       const [estado,setestado] = useState({})
 
-    return <section className='section' id='home'>
-    <div className="rojo">
-        <img src={imagen} alt="" className="img"/>
-        <img src={imagen} alt="" className="img imgderecha"/>
-    </div>
-    <div className="centro">
-      <span className='efectoescritura' style={estado}>{t("effectwrite._1")}</span>
-      <span className='efectoescrituraabajo' style={estilos}>{t("effectwrite._2")}</span>
-    </div>
-  </section>
+    return <>
+      <div className="rojo">
+          <img src={imagen} alt="" className="img"/>
+          <img src={imagen} alt="" className="img imgderecha"/>
+      </div>
+      <section className='section' id='home'>
+      <div className="centro">
+        <span className='efectoescritura' style={estado}>{t("effectwrite._1")}</span>
+        <span className='efectoescrituraabajo' style={estilos}>{t("effectwrite._2")}</span>
+      </div>
+    </section>
+    </>
 }
