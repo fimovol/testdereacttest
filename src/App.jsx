@@ -13,7 +13,7 @@ function App(){
     <div className="App">
       <Header/>
       <FotosBackground/>
-      <section className='section' id='sobremi'><Sobremi/></section>
+      <section className='sectionsobremi' id='sobremi'><Sobremi/></section>
       <section className='section' id='contacto'><Contacto/></section>
       <section className='section' id='proyectos'><Proyectos/></section>
       <section className='section' id='Blog'>

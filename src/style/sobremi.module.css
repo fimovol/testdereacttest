@@ -1,39 +1,62 @@
 .contenido{
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
-    right: 0px;
-    flex-direction: column;
 }
-.h2{
-    margin-block-start: 0;
-    margin-block-end: 0;
+.sobremicontenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33vw;
+    margin-top: 55px;
+}
+.testimonios{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.testimonio{
+    height: 213px;
+    width: 227px;
+    background-color: pink;
+    margin: 10px;
+}
+.fotosobremi{
+    display: none;
+    width: 67vw;
+    height: 376px;
+    border-radius: 10%;
+    background: transparent url("https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif") no-repeat center;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 .p{
-    text-transform: capitalize;
-    letter-spacing: 4px;
+    text-transform: math-auto;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
-    text-decoration: none;
+    font-weight: bold;
     font-size: medium;
-    color: rgb(30, 32, 32);
-    border-radius: 20px;
-    padding: 1px 20px 1px 20px;
+    color: rgb(0, 0, 0);
     user-select: none;
+    text-align: center;
 }
 .psincapitalize{
-    letter-spacing: 2px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
     text-decoration: none;
-    font-size: medium;
-    color: rgb(30, 32, 32);
-    border-radius: 20px;
-    padding: 1px 20px 1px 20px;
+    font-size: large;
+    color: rgb(196, 196, 196);
+    transition: all 300ms;
     user-select: none;
+}
+.psincapitalize:hover{
+    color: rgb(2, 0, 138);
 }
 .contenedorpaginanoencontrada,.contenedormejoresproyectos,.contenedorcontacto{
     position: absolute;
@@ -56,8 +79,7 @@
    border-radius: 20px;
    transition: .1s linear;
    opacity: 80%;
-   margin-left: 15px;
-   margin-right: 15px;
+   margin: 15px;
 }
 .elementosproyectos:hover{
    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
@@ -77,49 +99,38 @@
 .divproyectos{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: 36vw;
-    height: 74vh;
 }
 @media (max-width: 1087px) {
-    .p{
-        letter-spacing: 3px;
-    }
     .elementosproyectos{
         width: 100px;
         height: 100px;
     }
 }
 @media (max-width: 982px) {
-    .p{
-        letter-spacing: 2px;
-    }
     .divproyectos{
         width: 20vw;
     }
     .elementosproyectos{
-        margin-top: 5px;
-        margin-bottom: 5px;
         width: 100px;
         height: 100px;
     }
 }
 @media (max-width: 912px) {
+    .sobremicontenido{
+        width: 90vw;
+    }
+    .fotosobremi{
+        display: block;
+    }
     .divproyectos{
         width: 82vw;
     }
 }
+
 @media (max-width: 600px) {
-    .p{
-        letter-spacing: 1px;
-    }
-}
-@media (max-width: 600px) {
-    .p{
-        margin-block-start: 0;
-        margin-block-end: 0;
-    }
     .psincapitalize{
         letter-spacing: 0;
         font-size: smaller;
