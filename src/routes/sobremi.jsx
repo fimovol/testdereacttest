@@ -1,6 +1,7 @@
 import styles from "../style/sobremi.module.css"
 import {useTranslation} from "react-i18next"
 import foto from '../img/foto2.png'
+//import { Testimonio } from "../components/testimonio"
 
 export const Sobremi = () =>{
     const {t} = useTranslation("global")
@@ -8,26 +9,17 @@ export const Sobremi = () =>{
         <>
             <div className={styles.sobremicontenido}>
                 <h2>{t("header.about")}</h2>
-                <h3>¿cuantos candidatos tienen su propio dominio?</h3>
+                <h3>{t("about.domain")}</h3>
                 <p className={styles.p}>{t("about.complete")}</p>
                 <div className={styles.fotosobremi}>
                     <img src={foto} alt="mi foto" className={styles.foto}></img>
                 </div>
                 <div className={styles.testimonios}>
-                    <div className={styles.testimonio}>
-                        <h4>dashdkjahsdajsd</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laboriosam neque quaerat tempora. Illo necessitatibus repudiandae, quidem laboriosam </p>
-                    </div>
-                    <div className={styles.testimonio}>
-                    <h4>dashdkjahsdajsd</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laboriosam neque quaerat tempora. Illo necessitatibus repudiandae, quidem laboriosam </p>
-                    
-                    </div>
-                    <div className={styles.testimonio}>
-                    <h4>dashdkjahsdajsd</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis laboriosam neque quaerat tempora. Illo necessitatibus repudiandae, quidem laboriosam </p>
-                    
-                    </div>
+                    {/* <Testimonio nombre="vamos a cembrar el caos dasd asdasd" parrafo="asdasdasdkjsd"/>
+                    <Testimonio nombre="dasuih dasihdkjhdasjkl d" parrafo="asdasdasdkjsd"/>
+                    <Testimonio nombre="sad pásdiaiudhasfyagfg asaksjf" parrafo="asdasdasdkjsd"/>
+                    <Testimonio nombre="carlos el magnifico" parrafo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel voluptate id accusamus quos accusantium porro aliquam! Sed quasi molestias placeat velit asperiores hic, quod cum? Eos accusantium atque dolore!"/>
+                    <Testimonio nombre="aoidua asjdajsdlajd aslj aldjalsdlk" parrafo="asdasdasdkjsd"/> */}
                 </div>
             </div>
                 {/* <p className={styles.p}>{t("about.line-2")} </p>
