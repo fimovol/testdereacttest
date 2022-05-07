@@ -68,11 +68,11 @@ body{
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 31ch;
+  width: 33ch;
   visibility: hidden;
   margin-bottom: 23px;
 
-  animation: typing 3s steps(31),blink .5s infinite step-end alternate ,aparecer 0.1s infinite;
+  animation: typing 3s steps(33),blink .5s infinite step-end alternate ,aparecer 0.1s infinite;
   overflow: hidden;
   animation-delay: 3.5s;
 }

@@ -10,8 +10,8 @@ export const FotosBackground = () => {
     }
     if(i18n.language === "en"){
       estilos = {
-        width: "26ch",
-        animation: "typing 3s steps(26),blink .5s infinite step-end alternate ,aparecer 0.1s infinite",
+        width: "29ch",
+        animation: "typing 3s steps(29),blink .5s infinite step-end alternate ,aparecer 0.1s infinite",
         animationDelay: "3.5s"
       }
     }
