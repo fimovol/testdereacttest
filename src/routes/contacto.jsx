@@ -15,7 +15,7 @@ export function Contacto(){
             <h3 >GITHUB : </h3>
             <p><a className={styles.psincapitalize} href="https://github.com/fimovol" target="_blank" rel="noreferrer">github.com/fimovol</a> </p>
             <h3>LINKEDIN : </h3>
-            <p ><a className={styles.psincapitalize} href="https://www.linkedin.com/in/javier-francisco-s%C3%A1nchez-529605167/" target="_blank" rel="noreferrer">linkedin/javierfrancisco</a> </p>
+            <p ><a className={styles.psincapitalize} href="https://www.linkedin.com/in/javier-francisco-sanchez" target="_blank" rel="noreferrer">linkedin/javierfrancisco</a> </p>
         </div>
         
     )
