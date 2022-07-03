@@ -7,6 +7,7 @@ import googlemeet from "../img/googlemeet.png"
 import scraping from "../img/scraping.jpg"
 import ecomerce from "../img/ecomerce.png"
 import {useTranslation} from "react-i18next"
+import { TituloDescriptivo } from "../components/tituloDescriptivo"
 
 export default function Mejoresproyectos(){
     const [t] = useTranslation("global")
@@ -18,7 +19,9 @@ export default function Mejoresproyectos(){
     const ecomercehref = 'https://ecomercescraperjavier.herokuapp.com/'
     return (
         <div className={styles.contenedormejoresproyectos}>
-            <h2 className={styles.h2}>{t("header.proyects")}</h2>
+            <TituloDescriptivo>
+                {t("header.proyects")}
+            </TituloDescriptivo>
             <div className={styles.divproyectos}> 
                 <ProyectosQueRealice src={googlemeet} href={googlemeethref} alt="docker"/>
                 <ProyectosQueRealice src={scraping} href={scrapinghref} alt="scraping web"/> 

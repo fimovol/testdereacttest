@@ -1,21 +1,32 @@
 import styles from "../style/sobremi.module.css"
 import { useTranslation } from "react-i18next"
+import { TituloDescriptivo } from "../components/tituloDescriptivo"
+import { EnlaceContacto } from "../components/enlaces"
 
 export function Contacto(){
     const [t] = useTranslation("global")
 
-    let estilos = {
-        textTransform : "uppercase"
-    }
     return (
         <div className={styles.contenedorcontacto}>
-            <h2>{t("header.contact")}</h2>
-            <h3 style={estilos}>{t("contact.mail")}:</h3>
-            <p><a className={styles.psincapitalize} href="mailto:javiersanchezch@outlook.es">javiersanchezch@outlook.es</a> </p>
-            <h3 >GITHUB : </h3>
-            <p><a className={styles.psincapitalize} href="https://github.com/fimovol" target="_blank" rel="noreferrer">github.com/fimovol</a> </p>
-            <h3>LINKEDIN : </h3>
-            <p ><a className={styles.psincapitalize} href="https://www.linkedin.com/in/javier-francisco-s%C3%A1nchez-529605167/" target="_blank" rel="noreferrer">linkedin/javierfrancisco</a> </p>
+            <TituloDescriptivo>{t("header.contact")}</TituloDescriptivo>
+            <h3 className="uppercase my-2" >{t("contact.mail")}:</h3>
+            <p> 
+                <EnlaceContacto href='mailto:javiersanchezch@outlook.es'>
+                    javiersanchezch
+                </EnlaceContacto>
+            </p>
+            <h3 className="my-2">GITHUB : </h3>
+            <p>
+                <EnlaceContacto href='https://github.com/fimovol'>
+                    github.com/fimovol
+                </EnlaceContacto>
+            </p>
+            <h3 className="my-2">LINKEDIN : </h3>
+            <p >
+                <EnlaceContacto href='https://www.linkedin.com/in/javier-francisco-sanchez/'>
+                    linkedin/javierfrancisco
+                </EnlaceContacto>
+            </p>
         </div>
         
     )

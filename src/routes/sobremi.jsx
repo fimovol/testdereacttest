@@ -1,6 +1,7 @@
 import styles from "../style/sobremi.module.css"
 import {useTranslation} from "react-i18next"
 import foto from '../img/foto2.png'
+import { TituloDescriptivo } from "../components/tituloDescriptivo"
 //import { Testimonio } from "../components/testimonio"
 
 export const Sobremi = () =>{
@@ -8,12 +9,10 @@ export const Sobremi = () =>{
     return (
         <>
             <div className={styles.sobremicontenido}>
-                <h2 className="
-                font-extrabold text-3xl capitalize my-6
-                ">{t("header.about")}</h2>
+                <TituloDescriptivo>{t("header.about")}</TituloDescriptivo>
                 <p className='
                 font-sans font-bold text-neutral-900 select-none
-                text-center
+                text-center 
                 '>{t("about.complete")}</p>
                 <div className={styles.fotosobremi}>
                     <img src={foto} alt="mi foto" className={styles.foto}></img>
