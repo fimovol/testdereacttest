@@ -1,5 +1,7 @@
 import {useTranslation} from "react-i18next"
 import { useState } from 'react';
+import { Buttonchangelenguaje } from "./buttonchangelenguaje";
+import { ElementoHeader } from "./elementoHeader";
 
 export default function _(){
     const [t,i18n] =useTranslation("global")
@@ -16,7 +18,9 @@ export default function _(){
       icono = "fa fa-times"
       estilos = {
         display: 'block',
-        cursor: "pointer"
+        cursor: "pointer",
+        marginBotton: '20px',
+        marginTop: '20px'
       }
       navbarestilo = {
         height: 'auto',
@@ -29,13 +33,17 @@ export default function _(){
       <div className='tres lineas'>
         <i className={icono} style={{cursor:"pointer"}} onClick={() => setelemento(!elemento)}></i>
       </div>
-      <a href="#home" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.home")}</a>
-      <a href="#sobremi" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.about")}</a>
-      <a href="#contacto" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.contact")}</a>
-      <a href="#proyectos" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.proyects")}</a>
-      <a href="#Blog" className='parrafo' style={estilos} onClick={() => setelemento(true)}>{t("header.blog")}</a>
-      <button style={estilos} onClick={() => i18n.changeLanguage("es")}>Español</button>
-      <button style={estilos} onClick={() => i18n.changeLanguage("en")}>English</button>
+      <ElementoHeader ruta='home' estilos={estilos} elemento={setelemento}>{t("header.home")}</ElementoHeader>
+      <ElementoHeader ruta='sobremi' estilos={estilos} elemento={setelemento}>{t("header.about")}</ElementoHeader>
+      <ElementoHeader ruta='contacto' estilos={estilos} elemento={setelemento}>{t("header.contact")}</ElementoHeader>
+      <ElementoHeader ruta='proyectos' estilos={estilos} elemento={setelemento}>{t("header.proyects")}</ElementoHeader>
+      <ElementoHeader ruta='Blog' estilos={estilos} elemento={setelemento}>{t("header.blog")}</ElementoHeader>
+      <Buttonchangelenguaje estilos={estilos} idioma="es" >
+        Español
+      </Buttonchangelenguaje>
+      <Buttonchangelenguaje estilos={estilos} idioma="en" >
+        English
+      </Buttonchangelenguaje>
   </nav>
   )
 }

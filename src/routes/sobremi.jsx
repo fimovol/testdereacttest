@@ -8,9 +8,13 @@ export const Sobremi = () =>{
     return (
         <>
             <div className={styles.sobremicontenido}>
-                <h2>{t("header.about")}</h2>
-                <h3>{t("about.domain")}</h3>
-                <p className={styles.p}>{t("about.complete")}</p>
+                <h2 className="
+                font-extrabold text-3xl capitalize my-6
+                ">{t("header.about")}</h2>
+                <p className='
+                font-sans font-bold text-neutral-900 select-none
+                text-center
+                '>{t("about.complete")}</p>
                 <div className={styles.fotosobremi}>
                     <img src={foto} alt="mi foto" className={styles.foto}></img>
                 </div>
