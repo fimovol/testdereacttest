@@ -16,19 +16,41 @@ export default function Mejoresproyectos(){
     const movilhref = 'https://github.com/fimovol/fpr_interfaces_senati'
     const googlemeethref = 'https://google-meet-clone-2000-dev.twil.io/index.html'
     const scrapinghref = 'https://djasncjknweiacbaslcjk.herokuapp.com/'
-    const ecomercehref = 'https://ecomercescraperjavier.herokuapp.com/'
+    const repositoriogooglemeet = 'https://github.com/fimovol/google-clone-teclado'
+    const repositorioscraper = 'https://github.com/fimovol/noticias_variadas_scraping_cliente'
+    const repositorioluces = 'https://github.com/fimovol/lucesnavide-as'
+    const repositoriocalculadora = 'https://github.com/fimovol/calculadora'
     return (
-        <div className={styles.contenedormejoresproyectos}>
+        <div className="flex items-center flex-col">
             <TituloDescriptivo>
                 {t("header.proyects")}
             </TituloDescriptivo>
-            <div className={styles.divproyectos}> 
-                <ProyectosQueRealice src={googlemeet} href={googlemeethref} alt="docker"/>
-                <ProyectosQueRealice src={scraping} href={scrapinghref} alt="scraping web"/> 
-                <ProyectosQueRealice src={ecomerce} href={ecomercehref} alt="ecomerce"/>
-                <ProyectosQueRealice src={luces} href={luceshref} alt="luces"/>
-                <ProyectosQueRealice src={movil} href={movilhref} alt="movil"/>
-                <ProyectosQueRealice src={calculadora} href={calculadorahref} alt="calculadora"/>
+            <div className="p-3 md:w-2/5"> 
+                <ProyectosQueRealice 
+                    src={googlemeet}
+                    href={googlemeethref} 
+                    repositorio={repositoriogooglemeet} 
+                    alt="docker"/>
+                <ProyectosQueRealice 
+                    src={scraping} 
+                    href={scrapinghref} 
+                    repositorio={repositorioscraper}
+                    alt="scraping web"/> 
+                <ProyectosQueRealice 
+                    src={luces} 
+                    href={luceshref} 
+                    repositorio={repositorioluces}
+                    alt="luces"/>
+                <ProyectosQueRealice 
+                    src={movil} 
+                    href={movilhref}
+                    repositorio={movilhref} 
+                    alt="movil"/>
+                <ProyectosQueRealice 
+                    src={calculadora}
+                    href={calculadorahref} 
+                    repositorio={repositoriocalculadora}
+                    alt="calculadora"/>
             </div>
         </div>
         
