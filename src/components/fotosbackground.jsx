@@ -1,4 +1,3 @@
-import imagen from "../img/a2-min.png"
 import { useState } from 'react'
 import {useTranslation} from "react-i18next"
 
@@ -24,12 +23,9 @@ export const FotosBackground = () => {
       const [estado,setestado] = useState({})
 
     return <>
-      <div className="rojo">
-          <img src={imagen} alt="" className="img"/>
-          <img src={imagen} alt="" className="img imgderecha"/>
-      </div>
       <section className='section' id='home'>
-      <div className="centro">
+      <div className="h-screen w-screen relative 
+      flex justify-center items-center flex-col text-center">
         <span className='efectoescritura' style={estado}>{t("effectwrite._1")}</span>
         <span className='efectoescrituraabajo' style={estilos}>{t("effectwrite._2")}</span>
       </div>

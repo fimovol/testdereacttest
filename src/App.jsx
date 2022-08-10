@@ -10,7 +10,7 @@ import {useTranslation} from "react-i18next"
 function App(){
   const [t] = useTranslation("global")
   return (
-    <div className="bg-slate-500">
+    <div className="bg-slate-500 w-screen">
       <Header/>
       <FotosBackground/>
       <section className='sectionsobremi' id='sobremi'><Sobremi/></section>

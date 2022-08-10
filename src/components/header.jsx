@@ -29,8 +29,11 @@ export default function _(){
       }
   }
     return (
-    <nav className='navbar' style={navbarestilo}>
-      <div className='tres lineas'>
+    <nav className='bg-blue-400 w-screen h-[60px]
+    flex items-center justify-center fixed top-0 z-10
+    navbar' style={navbarestilo}>
+      <div className='w-[90px] h-[60px] flex justify-center 
+      items-center lg:hidden'>
         <i className={icono} style={{cursor:"pointer"}} onClick={() => setelemento(!elemento)}></i>
       </div>
       <ElementoHeader ruta='home' estilos={estilos} elemento={setelemento}>{t("header.home")}</ElementoHeader>

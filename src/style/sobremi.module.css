@@ -1,62 +1,9 @@
-.contenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200vh;
-    width: 100vw;
-}
-.sobremicontenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 33vw;
-    margin-top: 55px;
-}
-.testimonios{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.testimonio{
-    height: 213px;
-    width: 227px;
-    background-color: pink;
-    margin: 10px;
-}
 .fotosobremi{
     display: none;
     width: 67vw;
     height: 376px;
     border-radius: 10%;
     background: transparent url("https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif") no-repeat center;
-}
-.foto{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-.p{
-    text-transform: math-auto;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: medium;
-    color: rgb(0, 0, 0);
-    user-select: none;
-    text-align: center;
-}
-.psincapitalize{
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    font-size: large;
-    color: rgb(196, 196, 196);
-    transition: all 300ms;
-    user-select: none;
-}
-.psincapitalize:hover{
-    color: rgb(2, 0, 138);
 }
 .contenedorpaginanoencontrada,.contenedormejoresproyectos,.contenedorcontacto{
     position: absolute;
@@ -67,28 +14,8 @@
     align-items: center;
     flex-direction: column;
 }
-.contenedorblog{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.linkpaginanoencontrada{
-    z-index: 10;
-}
 @media (max-width: 912px) {
-    .sobremicontenido{
-        width: 90vw;
-    }
     .fotosobremi{
         display: block;
     }
 }
-
-@media (max-width: 600px) {
-    .psincapitalize{
-        letter-spacing: 0;
-        font-size: smaller;
-    }
-}
-
