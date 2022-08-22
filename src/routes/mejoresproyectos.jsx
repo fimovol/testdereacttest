@@ -1,11 +1,9 @@
-import styles from "../style/sobremi.module.css"
 import ProyectosQueRealice from "../utils/proyectosjsx"
 import calculadora from "../img/calculadora.jpg"
 import luces from "../img/luces.jpg"
 import movil from "../img/movil.jpg"
 import googlemeet from "../img/googlemeet.png"
 import scraping from "../img/scraping.jpg"
-import ecomerce from "../img/ecomerce.png"
 import {useTranslation} from "react-i18next"
 import { TituloDescriptivo } from "../components/tituloDescriptivo"
 

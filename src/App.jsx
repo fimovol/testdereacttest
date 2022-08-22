@@ -10,7 +10,7 @@ import {useTranslation} from "react-i18next"
 function App(){
   const [t] = useTranslation("global")
   return (
-    <div className="bg-slate-500 w-screen">
+    <div className="bg-celestedark w-screen">
       <Header/>
       <FotosBackground/>
       <section className='sectionsobremi' id='sobremi'><Sobremi/></section>
@@ -18,8 +18,9 @@ function App(){
       <section id='proyectos'><Proyectos/></section>
       <section className='section' id='Blog'>
         <Link className='
-        py-3 px-5 bg-blue-700 text-white rounded-full capitalize
-        transition font-sans z-10 hover:bg-blue-900 font-bold hover:scale-110
+        py-1 px-4 bg-celeste text-morado border-4 border-morado rounded-full
+        transition font-sans hover:bg-morado hover:text-celeste uppercase
+         hover:border-celeste font-extrabold hover:scale-110 tracking-wider
         ' to="/b">{t("blog.text")}</Link>
       </section>
     </div>

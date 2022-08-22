@@ -7,17 +7,17 @@ const ProyectosQueRealice = ({src,href,alt="imagen",repositorio="https://www.goo
       <img className='
       group-hover:scale-110 transition group-hover:opacity-60
       ' alt={alt} src={src}/>
-      <div className="absolute">
-        <a href={href}>
-          <div className='mb-4 text-center
-          py-3 px-5 bg-blue-700 text-white rounded-full capitalize opacity-0 
-          group-hover:opacity-100 transition font-sans z-10 hover:bg-blue-900
+      <div className="absolute flex items-center flex-col">
+        <a href={href} >
+          <div className='text-center mb-4
+          py-1 px-4 bg-celeste text-morado border-2 border-morado rounded-full capitalize opacity-0 
+          group-hover:opacity-100 transition font-sans z-10 font-bold inline-block
           '>website</div>
         </a>
         <a href={repositorio}>
           <div className='text-center
-          py-3 px-5 bg-blue-700 text-white rounded-full capitalize opacity-0 
-          group-hover:opacity-100 transition font-sans z-10 hover:bg-blue-900
+          py-1 px-4 bg-morado text-celeste border-2 border-celeste rounded-full capitalize opacity-0 
+          group-hover:opacity-100 transition font-sans z-10 font-bold inline-block
           '>repositorio</div>
         </a>
         

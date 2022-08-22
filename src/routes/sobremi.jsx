@@ -11,7 +11,7 @@ export const Sobremi = () =>{
             <div className='flex justify-center items-center flex-col md:w-[33vw] w-[80vw] mt-14 '>
                 <TituloDescriptivo>{t("header.about")}</TituloDescriptivo>
                 <p className='
-                font-sans font-bold text-neutral-900 select-none
+                font-sans font-bold select-none
                 text-center 
                 '>{t("about.complete")}</p>
                 <div className={styles.fotosobremi}>

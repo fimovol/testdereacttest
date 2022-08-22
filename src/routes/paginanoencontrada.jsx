@@ -4,8 +4,8 @@ export default function _(){
     return (
         <div className={styles.contenedorpaginanoencontrada}>
             <h1>lo siento no encontramos lo que buscas</h1>
-            <Link to="/" className='z-10 text-blue-600 
-             hover:text-blue-800'>
+            <Link to="/" className='z-10 text-azul
+             hover:text-celestedark'>
                 vamos a la pagina principal
             </Link> 
         </div>

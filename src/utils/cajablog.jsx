@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const Caja = ({descripcion,imagen}) => {
 
-    return <div className='w-[270px] h-[405px] rounded bg-blue-700
+    return <div className='w-[270px] h-[405px] rounded bg-azul
     mb-[48px] transition hover:-translate-y-4'>
     <Link to="jeje">
         <div className='h-full w-full'>

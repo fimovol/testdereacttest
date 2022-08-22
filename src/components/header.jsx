@@ -29,7 +29,7 @@ export default function _(){
       }
   }
     return (
-    <nav className='bg-blue-400 w-screen h-[60px]
+    <nav className='bg-morado w-screen h-[60px]
     flex items-center justify-center fixed top-0 z-10
     navbar' style={navbarestilo}>
       <div className='w-[90px] h-[60px] flex justify-center 
@@ -41,10 +41,10 @@ export default function _(){
       <ElementoHeader ruta='contacto' estilos={estilos} elemento={setelemento}>{t("header.contact")}</ElementoHeader>
       <ElementoHeader ruta='proyectos' estilos={estilos} elemento={setelemento}>{t("header.proyects")}</ElementoHeader>
       <ElementoHeader ruta='Blog' estilos={estilos} elemento={setelemento}>{t("header.blog")}</ElementoHeader>
-      <Buttonchangelenguaje estilos={estilos} idioma="es" >
+      <Buttonchangelenguaje estilos={estilos} idioma="es" cambiaridioma={i18n}>
         Español
       </Buttonchangelenguaje>
-      <Buttonchangelenguaje estilos={estilos} idioma="en" >
+      <Buttonchangelenguaje estilos={estilos} idioma="en" cambiaridioma={i18n}>
         English
       </Buttonchangelenguaje>
   </nav>
