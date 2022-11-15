@@ -26,7 +26,7 @@ export const FotosBackground = () => {
       <section className='section' id='home'>
       <div className="h-screen w-screen relative 
       flex justify-center items-center flex-col text-center">
-        <span className='efectoescritura' style={estado}>{t("effectwrite._1")}</span>
+        <h1 className='efectoescritura' style={estado}>{t("effectwrite._1")}</h1>
         <span className='efectoescrituraabajo' style={estilos}>{t("effectwrite._2")}</span>
       </div>
     </section>
